@@ -149,6 +149,7 @@ class TicTacToe:
     def startGame(self):        
         self.state.emptyBoard()
         self.state.printBoard()
+        self.state.turn = 0
         while not self.state.hasEnded():
             self.playerInput()
             self.state.printBoard()
